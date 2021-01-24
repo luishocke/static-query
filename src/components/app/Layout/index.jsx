@@ -2,9 +2,9 @@ import React from "react"
 import AppLayoutContainer from "./AppLayoutContainer"
 
 
-function AppLayout({ children, location }) {
+function AppLayout({ children }) {
   return (
-      <AppLayoutContainer location={location}>{children}</AppLayoutContainer>
+      <AppLayoutContainer>{children}</AppLayoutContainer>
   )
 }
 export default AppLayout

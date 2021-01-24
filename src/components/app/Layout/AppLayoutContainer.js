@@ -1,5 +1,4 @@
 import React from "react"
-
 import AuthBackground from "../authentication/AuthBackground"
 
 function ChildrenWrapper() {

@@ -1,9 +1,9 @@
 import React from 'react';
 import AppLayout from '../../components/App/Layout';
 
-export default function AppIndexPage({ location }) {
+export default function AppIndexPage() {
   return (
-    <AppLayout location={location}>
+    <AppLayout>
       <p>Hello World</p>
     </AppLayout>
   );
