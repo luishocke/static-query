@@ -1,17 +1,7 @@
 import Img from "gatsby-image"
 import React from "react"
-import styled from "styled-components"
 import { StaticQuery, graphql } from "gatsby"
 
-const BackgroundSC = styled.div`
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
-  z-index: -1;
-`
 
 const Background = ({ data }) => (
   // <BackgroundSC draggable={false}>
@@ -43,7 +33,7 @@ const sq = (
   <StaticQuery
     query={graphql`
       query {
-        authBackground: file(relativePath: { eq: "min/paint.jpg" }) {
+        authBackground: file(relativePath: { eq: "min/authBackground.jpg" }) {
           childImageSharp {
             fluid(
               maxWidth: 1000

@@ -1,9 +1,7 @@
 import React, { useEffect, useState } from "react"
-import { AuthBoxRoot, AuthBoxMessage, SSOContainer } from "./styled"
 import SSOProviders from "./SSOProviders"
 
 import handleAuthError from "./handleAuthError"
-import { AuthBoxText } from "./authBoxText"
 
 import RegisterForm from "./RegisterForm"
 import SignInForm from "./SignInForm"
@@ -14,7 +12,7 @@ export default function AuthBox({ mode = "login" }) {
   // Auth box shakes when an error occurs
   const [shaking, setShaking] = useState(false)
   // text strings for button texts etc
-  const text = AuthBoxText(mode)
+  const text = "..:"
   // this holds the form fields
   const [state, setState] = useState({
     email: "",
@@ -32,7 +30,6 @@ export default function AuthBox({ mode = "login" }) {
     if (!validatePassword()) {
       setMessage("The passwords don't match")
       setShaking(true)
-      return
     }
   }
 
@@ -60,33 +57,5 @@ export default function AuthBox({ mode = "login" }) {
     }, 1000)
   }, [shaking])
 
-  return (
-    <AuthBoxRoot id={"signInBox"} animate={shaking}>
-      <AuthBoxMessage>
-        <span>{text.authText} </span>
-      </AuthBoxMessage>
-      {/* display either register form or sign in form based on mode */}
-      {mode === "register" ? (
-        <RegisterForm
-          register={register}
-          message={message}
-          text={text}
-          state={state}
-          setState={setState}
-          validatePassword={validatePassword}
-        />
-      ) : (
-        <SignInForm
-          signIn={signIn}
-          message={message}
-          text={text}
-          state={state}
-          setState={setState}
-        />
-      )}
-
-      {/* contains third party sign ins */}
-
-    </AuthBoxRoot>
-  )
+  return <p> uuu</p>
 }

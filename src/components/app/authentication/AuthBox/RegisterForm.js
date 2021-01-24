@@ -1,4 +1,4 @@
-import { AuthBoxForm } from './styled';
+
 import React from 'react';
 
 export default function RegisterForm({
@@ -18,7 +18,7 @@ export default function RegisterForm({
   }
 
   return (
-    <AuthBoxForm onSubmit={register}>
+    <div onSubmit={register}>
       <div className={'row'}>
         <label htmlFor={'emailInput'}>Email</label>
         <input
@@ -73,6 +73,6 @@ export default function RegisterForm({
           {text.buttonText}
         </button>
       </div>
-    </AuthBoxForm>
+    </div>
   );
 }

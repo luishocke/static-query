@@ -1,4 +1,3 @@
-import { AuthBoxForm } from './styled';
 
 
 import React from 'react';
@@ -13,7 +12,7 @@ export default function SignInForm({ signIn, message, text, state, setState }) {
   }
 
   return (
-    <AuthBoxForm onSubmit={signIn}>
+  <div >
       <div className={'row'}>
         <label htmlFor={'emailInput'}>Email</label>
         <input
@@ -52,6 +51,6 @@ export default function SignInForm({ signIn, message, text, state, setState }) {
           {text.buttonText}
         </button>
       </div>
-    </AuthBoxForm>
+    </div>
   );
 }
