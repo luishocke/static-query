@@ -1,15 +1,12 @@
-import React, { useEffect, useState } from "react"
+import React from "react"
 
-import AuthBox from "../Authentication/AuthBox"
-import AuthBackground from "../authentication/AuthBox/AuthBackground"
+import AuthBackground from "../authentication/AuthBackground"
 
-function ChildrenWrapper({ location, children, user, setUser }) {
+function ChildrenWrapper() {
   return (
     <>
-
-        <AuthBackground />
-        <AuthBox mode={"signin"} />
-
+      <AuthBackground />
+      <p>hello world</p>
     </>
   )
 }
