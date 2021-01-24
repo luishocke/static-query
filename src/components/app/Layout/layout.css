@@ -1,0 +1,15 @@
+:root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  /* it's not a duplicate if I add a comment */
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  letter-spacing: 0.02rem;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
